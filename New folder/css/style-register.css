@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
     background-color: grey;
     margin: 30px 20px;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
@@ -54,6 +59,8 @@ body {
     background-color: orange;
     border-radius: 20px;
     transition: 500ms;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    animation: neon-glow 500ms linear infinite alternate;
 }
 .register-login a {
     text-decoration: none;
@@ -80,11 +87,21 @@ body {
 .container-form {
     width: 500px;
     height: 100%;
-    background-color: #fff;
+    background-color: #fff transparent;
     margin: 20px auto;
     border-radius: 20px;
-    box-shadow: 1px 4px 20px 3px black;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    animation: neon-glow 500ms linear infinite alternate;
 }
+
+@keyframes neon-glow {
+    from {
+      box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(0, 0, 255, .1);
+    }
+  }
 
 .header-form {
     margin: 25px auto;
@@ -114,8 +131,8 @@ body {
     padding: 7px 0;
     margin: 10px;
     opacity: 1;
-    outline: #fff;
-    box-shadow: 1px 1px 3px 1px black;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px orange;
     border: none;
 }
 
@@ -137,6 +154,8 @@ body {
     transition: 500ms;
     cursor: pointer;
     border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    animation: neon-glow 500ms linear infinite alternate;
 }
 
 .kotak-login:hover {
@@ -173,7 +192,7 @@ body {
     height: 30px;
 }
 
-.kotak-fb {
+.kotak-no {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -186,14 +205,18 @@ body {
     opacity: 0.7;
 }
 
-.kotak-fb p {
+.kotak-no p {
     margin: auto;
     color: black;
 }
 
-.img-fb {
-    transform: translateX(75px)translateY(3px);
-    height: 30px;
+.kotak-no svg {
+    transform: translateX(65px)translateY(5.5px);
+    height: 28px;
+    width: 30px;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 50%;
 }
 
 .login-bottom {
