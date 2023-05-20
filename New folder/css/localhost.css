@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins','Roboto', sans-serif;
+}
+
+/* ------------------------------nav-------------------------------- */
+
+nav {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    max-width: 1168px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content {
+    margin-right: 30px;
+    height: 30px;
+}
+
+.hidden p {
+    visibility: hidden;
+}
+
+.nav-box {
+    line-height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-box svg {
+    transform: scale(1.5) translateY(5px)translateX(10px);
+}
+
+/* ------------------------------end nav-------------------------------- */
+
+
+/* --------------------------side bar------------------------ */
+
+.sidebar header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar header svg {
+    transform: scale(1.7)translateX(-1px)translateY(1px);
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: blue;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    background: rgba(255, 255, 255, .6);
+    user-select: none;
+}
+
+.sidebar svg {
+    transform: scale(1.5);
+}
+
+.sidebar p {
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 17px;
+    color: #fff;
+    padding-left: 40px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a svg {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    transform: scale(2);
+    color: blue;
+    transition: all .5s ease;
+}
+
+label #cancel {
+    z-index: 10;
+    left: -195px;
+    top: 385px;
+    transform: scale(2);
+    color: grey;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/* --------------------------end side bar------------------------ */
+
+/* ----------------------------content---------------------------- */
+
+.welcome {
+    font-size: 30px;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all .5s;
+  }
+
+  .dashboard-content {
+    display: none;
+  }
+
+  .profile-content {
+    display: none;
+  }
+
+  .kotak-profile {
+    width: 500px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 3px 10px 1px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .kotak-gambar svg {
+    width: 150px;
+    height: 140px;
+    margin-top: 8px;
+  }
+
+  .email-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+/* ----------------------------end content---------------------------- */
