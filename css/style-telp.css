@@ -6,12 +6,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
   position: relative;
   overflow-x: hidden;
   background-color: grey;
   margin: 30px 20px;
-  background-image: url("<?= base_url(); ?>img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -41,43 +40,6 @@ body {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-}
-
-.container-login {
-  display: flex;
-}
-
-.register-login {
-  display: flex;
-  justify-content: space-between;
-  line-height: 40px;
-}
-
-.kotak-daftar {
-  width: 100px;
-  height: 40px;
-  background-color: orange;
-  border-radius: 20px;
-  transition: 500ms;
-  box-shadow: 0 0 20px rgb(0, 0, 255);
-  animation: neon-glow 500ms linear infinite alternate;
-}
-
-.register-login a {
-  text-decoration: none;
-  font-size: 17px;
-  margin-left: 20px;
-  color: blue;
-  text-align: center;
-}
-
-.register-login p {
-  color: #fff;
-}
-
-.kotak-daftar:hover {
-  background-color: blue;
-  color: black;
 }
 
 .form-login {
@@ -124,17 +86,30 @@ body {
 .user-box {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.container-input {
+  display: flex;
+}
+
+.container-input p {
+  line-height: 56px;
+  font-size: 16px;
 }
 
 .user-box input {
   border-radius: 3px;
-  font-size: 16px;
   padding: 7px 0;
   margin: 10px;
+  margin-left: 3px;
   opacity: 1;
-  outline: none;
+  outline: #fff;
   box-shadow: 1px 1px 3px 1px orange;
   border: none;
+  font-size: 16px;
+  width: 260px;
+  max-height: 35px;
 }
 
 .user-box label {
@@ -142,91 +117,71 @@ body {
   margin-top: 5px;
 }
 
-.kotak-login {
-  width: 80%;
+.kotak-verifikasi {
+  width: 140px;
   height: 45px;
   border-radius: 20px;
   text-align: center;
   line-height: 45px;
   font-size: 18px;
   background-color: orange;
-  margin: 20px auto;
+  text-decoration: none;
+  margin: auto;
   color: blue;
   transition: 500ms;
   cursor: pointer;
   border: none;
-  box-shadow: 0 0 20px rgb(0, 0, 255);
+  box-shadow: 0 0 20px rgb(255, 165, 0);
+  animation: neon-glow 500ms linear infinite alternate;
+}
+
+.kotak-verifikasi:hover {
+  background-color: blue;
+  color: black;
+}
+
+.container2 {
+  margin-bottom: 28px;
+  display: none;
+}
+
+.input-2 {
+  width: 200px;
+  border-radius: 3px;
+  padding: 7px 0;
+  margin: 10px;
+  margin-top: 0;
+  margin-left: 3px;
+  margin-bottom: 0;
+  opacity: 1;
+  outline: #fff;
+  box-shadow: 1px 1px 3px 1px orange;
+  border: none;
+  font-size: 16px;
+  max-height: 35px;
+  transform: translateY(-1px);
+}
+
+.kotak-login {
+  width: 30%;
+  height: 45px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  background-color: orange;
+  margin: 20px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: blue;
+  transition: 500ms;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 20px rgb(255, 165, 0);
   animation: neon-glow 500ms linear infinite alternate;
 }
 
 .kotak-login:hover {
   background-color: blue;
   color: black;
-}
-
-.text {
-  font-size: 14px;
-  opacity: 0.5;
-  margin: auto;
-}
-
-.kotak-google {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  height: 40px;
-  line-height: 30px;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 20px;
-  width: 80%;
-  opacity: 0.7;
-}
-
-.kotak-google p {
-  margin: auto;
-  color: black;
-}
-
-.img-google {
-  transform: translateX(84px) translateY(3px);
-  height: 30px;
-}
-
-.kotak-no {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  height: 40px;
-  line-height: 30px;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 20px;
-  width: 80%;
-  opacity: 0.7;
-}
-
-.kotak-no p {
-  margin: auto;
-  color: black;
-}
-
-.kotak-no svg {
-  transform: translateX(65px) translateY(5.5px);
-  height: 28px;
-  width: 30px;
-  padding: 5px;
-  background-color: orange;
-  border-radius: 50%;
-}
-
-.login-bottom {
-  margin: 25px auto;
-  font-size: 16px;
-  opacity: 0.5;
-}
-
-.login-bottom a {
-  font-weight: 400;
-  color: blue;
-}/*# sourceMappingURL=style-register.css.map */
+}/*# sourceMappingURL=style-telp.css.map */

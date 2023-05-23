@@ -69,7 +69,7 @@ class Login extends CI_Controller
                 $data = $masuk->row_array();
                 $this->session->set_userdata('nama_pengguna', $data['nama_pengguna']);
                 $this->load->library('session');
-                $this->session->set_flashdata('message', 'HeyLink.me');
+                $this->session->set_flashdata('message', 'JavaWebster');
                 echo json_encode(array('status' => 'success', 'message' => $this->session->flashdata('message')));
             } else {
                 $this->session->set_flashdata('pesan', 'email atau password salah');

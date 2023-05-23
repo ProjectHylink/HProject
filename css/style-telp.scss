@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    background-color: grey;
+    margin: 30px 20px;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+}
+
+.logo-heylink {
+    line-height: 40px;
+}
+
+.logo-heylink svg {
+    transform: scale(1.7) translateY(0px);
+    color: blue;
+}
+
+.logo-heylink a {
+    font-size: 25px;
+    text-decoration: none;
+    color: blue;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    width: 500px;
+    height: 100%;
+    background-color: #fff transparent;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    animation: neon-glow 500ms linear infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+      box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(0, 0, 255, .1);
+    }
+  }
+
+.header-form {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header-form span {
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container-input {
+    display: flex;
+}
+
+.container-input p {
+    line-height: 56px;
+    font-size: 16px;
+}
+
+.user-box input {
+    border-radius: 3px;
+    padding: 7px 0;
+    margin: 10px;
+    margin-left: 3px;
+    opacity: 1;
+    outline: #fff;
+    box-shadow: 1px 1px 3px 1px orange;
+    border: none;
+    font-size: 16px;
+    width: 260px;
+    max-height: 35px;
+}
+
+.user-box label {
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.kotak-verifikasi {
+    width: 140px;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    background-color: orange;
+    text-decoration: none;
+    margin: auto;
+    color: blue;
+    transition: 500ms;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 1);
+    animation: neon-glow 500ms linear infinite alternate;
+}
+
+.kotak-verifikasi:hover {
+    background-color: blue;
+    color: black;
+}
+
+.container2 {
+    margin-bottom: 28px;
+    display: none;
+}
+
+.input-2 {
+    width: 200px;
+    border-radius: 3px;
+    padding: 7px 0;
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 3px;
+    margin-bottom: 0;
+    opacity: 1;
+    outline: #fff;
+    box-shadow: 1px 1px 3px 1px orange;
+    border: none;
+    font-size: 16px;
+    max-height: 35px;
+    transform: translateY(-1px);
+}
+
+.kotak-login {
+    width: 30%;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: orange;
+    margin: 20px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: blue;
+    transition: 500ms;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 1);
+    animation: neon-glow 500ms linear infinite alternate;
+}
+
+.kotak-login:hover {
+    background-color: blue;
+    color: black;
+}
