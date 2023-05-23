@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/HProject/login/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -138,7 +138,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = 'vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -326,7 +326,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/userguide3/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'e3@9$7c1&4!2^5*';
 
 /*
 |--------------------------------------------------------------------------
@@ -383,14 +383,14 @@ $config['encryption_key'] = '';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_samesite'] = 'Lax';
-$config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
-$config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = FALSE;
+$config['sess_driver'] = 'files'; // Use the file driver for session storage
+$config['sess_cookie_name'] = 'ci_session'; // Set a cookie name for the session
+$config['sess_expiration'] = 7200; // Session expiration time in seconds
+$config['sess_save_path'] = sys_get_temp_dir(); // Set the path to store session files
+$config['sess_match_ip'] = FALSE; // Change to TRUE if you want to match the IP address as well
+$config['sess_time_to_update'] = 300; // Session update time in seconds
+$config['sess_regenerate_destroy'] = FALSE; // Set to TRUE if you want to regenerate session ID on each request
+
 
 /*
 |--------------------------------------------------------------------------
