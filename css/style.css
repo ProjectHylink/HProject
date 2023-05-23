@@ -1,0 +1,1612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* -----------HEADER--------------- */
+
+#header {
+    background-color: grey;
+    height: 735px;
+    margin-bottom: 150px;
+}
+
+.container {
+    margin: auto 100px;
+}
+
+/* -----------END HEADER--------------- */
+
+
+/* -----------------NAV------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+    align-items: center;
+}
+
+nav .logo a {
+    color: blue;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    transition: 1s;
+}
+
+nav .logo svg {
+    color: blue;
+    transform: scale(2);
+    margin-right: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.logo a:hover {
+    color: black;
+}
+
+.blokul {
+    display: flex;
+    justify-content: end;
+}
+
+.blok {
+    display: flex;
+    gap: 20px;
+    line-height: 35px;
+}
+
+.dashboard {
+    margin-right: 50px;
+}
+
+.logo2 {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logo2 a {
+    font-size: 15px;
+}
+
+.logo2:hover {
+    background-color: blue;
+}
+
+.flag {
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+}
+
+.flag-dropdown {
+    display: none;
+    position: absolute;
+    top: 26.5px;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px 5px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.flag-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flag-dropdown ul li {
+    width: 160px;
+}
+
+.flag-dropdown a {
+    font-size: 15px;
+}
+
+.flag-dropdown a:hover {
+    color: orange;
+}
+
+.flag:hover .flag-dropdown {
+    display: block;
+}
+
+/* ---------------------ENDNAV--------------------- */
+
+/* -------------CONTENT------------------------ */
+
+.container-content {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1-gambar img {
+    width: 100%;
+    /* transform: translateY(-130px); */
+}
+
+.content-1 {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.content-1 h3 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.content-1 h1 {
+    font-size: 100px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.content-1 p {
+    font-size: 27px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.logo-3 {
+    margin-top: 50px;
+}
+
+.kotak {
+    height: 55px;
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.kotak:hover {
+    background-color: blue;
+}
+
+.content-1 .logo-3 .kotak2 p {
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.content-1 .logo-3 .kotak2 a {
+    font-size: 13px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+
+.kotak a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+/* -------------END CONTENT------------------------ */
+
+/* ----------------------ARTIKEL---------------- */
+
+.container2 {
+    margin: auto 60px;
+    display: flex;
+}
+
+#artikel h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 38px;
+    opacity: 0.8;
+}
+
+.container-artikel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.artikel-logo svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+}
+
+.artikel-logo h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+.artikel-logo p {
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.artikel-logo {
+    flex: 1;
+    padding: 10px;
+}
+
+.artikel2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 24px;
+}
+
+/* .artikel2 .image img{
+    width: 100%;
+} */
+
+.artikel2 .content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+/* .artikel2>div{
+    width: calc(100% / 2);
+} */
+
+.content2 {
+    max-width: 50%;
+    /* flex: 1; */
+}
+
+.image {
+    max-width: 50%;
+    /* flex: 1; */
+}
+
+.content2 h4 {
+    font-size: 35px;
+    opacity: 0.8;
+}
+
+.content2 p {
+    opacity: 0.8;
+}
+
+/* ----------------------END ARTIKEL---------------- */
+
+/* ----------------------HAMBURGER MENU------------------ */
+
+.kotak-login {
+    display: none;
+}
+
+.bahasa a img {
+    display: none;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    cursor: pointer;
+    top: -2px;
+    right: -12.5px;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: blue;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* ---------------------HAMBURGER MENU ANIMATION-------------------- */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(1px,-1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(1px, 1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+.menu-toggle:hover span {
+    background-color: lightblue;
+}
+/* ---------------------END HAMBURGER MENU ANIMATION-------------------- */
+
+/* ----------------------END HAMBURGER MENU------------------ */
+
+/* ----------------------VIDIO------------------------- */
+
+.vidio-gif {
+    display: flex;
+    flex-direction: column;
+}
+
+.vidio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gif {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gif img {
+    width: 1780px;
+    height: 900px;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content3 h6 {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    opacity: 0.8;
+}
+
+.content3 p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+
+.kotak3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.kotak3 a {
+    height: 50px;
+    width: 150px;
+    background-color: orange;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.kotak3 a:hover {
+    background-color: blue;
+}
+
+/* ----------------------END VIDIO------------------------- */
+
+/* -----------------------------STEP---------------------------- */
+
+#step {
+    width: 80%;
+    height: 1000px;
+    margin: 150px auto;
+    /* box-shadow: 0 30px 100px 20px rgba(0, 0, 0, .8); */
+    /* border-radius: 50px; */
+}
+
+.container-step {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.container-step h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.step-content-isi {
+    text-align: center;
+}
+
+.step-content-isi h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    color: blue;
+}
+
+.step-content-isi h5 {
+    padding-bottom: 18px;
+    font-size: 25px;
+    opacity: 0.8;
+    /* height: 70px; */
+}
+
+.step-content-isi p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.step-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 20px;
+    transition: 1s;
+}
+
+.hover:hover {
+    background-color: grey;
+    transform: translateY(10px);
+}
+
+.step-kotak {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    width: 800px;
+    border-radius: 30px;
+    height: 80px;
+    margin: 100px auto;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.step-kotak a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    color: black;
+}
+
+.step-kotak:hover {
+    background-color: blue;
+}
+
+/* -----------------------------END STEP---------------------------- */
+
+/* -----------------------------MESSEGE------------------------------ */
+
+.mes button {
+    display: none;
+}
+
+.mes {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+}
+.messege {
+    width: 60px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50px 10px 50px 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    transition: 1s;
+}
+
+.messege svg { 
+    transform: scale(1.8) translateX(12px)translateY(9px);
+    color: #fff;
+}
+
+.messege:hover {
+    background-color: blue;
+}
+
+
+
+/* -----------------------------END MESSEGE------------------------------ */
+
+/* -------------------------------SIDE BAR CHAT--------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    position: relative;
+}
+
+.sidebar-chat {
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+    width: 350px;
+    height: 70%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px orange;
+    transition: all 500ms;
+    display: none;
+    z-index: 10;
+}
+
+.sidebar-chat.show {
+    display: block;
+}
+
+.sidebar-chat .top {
+    font-size: 20px;
+    background-color: blue;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.top p {
+    margin-top: 15px;
+    margin-left: 39px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.top {
+    position: relative;
+}
+
+.top svg {
+    transform: scale(1.8)translateX(10px)translateY(23px);
+    color: #fff;
+}
+
+.containertop-sidebarchat {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: 96px;
+
+}
+
+.sidebar-judul {
+    width: 95%;
+    height: 50px;
+    background-color: grey;
+    line-height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.sidebar-judul p {
+    font-weight: bold;
+    font-size: large;
+}
+
+.sidebar-wa {
+    width: 95%;
+    height: 50px;
+    background-color: grey;
+    line-height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.sidebar-wa:hover {
+    background-color: orange;
+}
+
+.sidebar-wa a {
+    text-decoration: none;
+    color: green;
+}
+
+.sidebar-wa svg {
+    transform: translateY(2px)translateX(2px);
+}
+
+.sidebar-gmail {
+    width: 95%;
+    height: 50px;
+    background-color: grey;
+    line-height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.sidebar-gmail a svg {
+    width: 18px;
+    height: 18px;
+    transform: translateX(1px)translateY(2px);
+}
+
+.sidebar-gmail a {
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}
+
+.sidebar-gmail:hover {
+    background-color: orange;
+}
+
+.sidebar-telp {
+    width: 95%;
+    height: 50px;
+    background-color: grey;
+    line-height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.sidebar-telp a svg {
+    width: 18px;
+    height: 18px;
+    transform: translateX(1px)translateY(2px);
+}
+
+.sidebar-telp a {
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+}
+
+.sidebar-telp:hover {
+    background-color: orange;
+}
+
+.copyryght-sidebar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.copyryght-sidebar p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.copyryght-sidebar svg {
+    transform: translateY(2px);
+}
+
+.copyryght-sidebar a {
+    text-decoration: none;
+}
+
+.copyryght-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-chat button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.closebutton {
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top: -33px;
+    right: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.closebutton:hover {
+    background-color: orange;
+}
+
+.closebutton p {
+    opacity: 1;
+    font-weight: bold;
+    line-height: 28px;
+    font-size: 17px;
+    color: white;
+}
+
+/* -------------------------------END SIDE BAR CHAT--------------------------- */
+
+/* --------------------------------SIDE BAR----------------------------------- */
+
+.sidebar-nav {
+    display: none;
+}
+
+/* --------------------------------END SIDE BAR----------------------------------- */
+
+/* ---------------------------FOOTER---------------------- */
+
+#footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background-color: grey;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.footer1 p {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.footer-kotak {
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.footer-kotak a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.footer-kotak:hover {
+    background-color: blue;
+}
+
+.footer2 {
+    opacity: 0.5;
+}
+
+.footersec ul li {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.footersec ul li a {
+    text-decoration: none;
+    transition: 1s;
+    font-size: 19px;
+}
+
+.footersec ul li a svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(5px);
+}
+
+.footersec ul li a:hover {
+    color: white;
+}
+
+.footertext {
+    font-size: 19px;
+}
+
+.footertext a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+.footertext a:hover {
+    color: white;
+}
+
+/* ---------------------------END FOOTER---------------------- */
+
+/* ---------------------RESPONSIV------------------ */
+
+/* ---------------------UKURAN MOBILE---------------- */
+
+@media only screen and (max-width: 600px)  {
+    .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100px;
+        height: 60vh;
+        width: 100%;
+        background-color: grey;
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3),
+                    0 -5px 10px -5px rgba(0, 0, 0, 0.3);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .sidebar-nav.show {
+        /* sidebar visible */
+        transform: translateX(0);
+    }
+    .sidebarnav-kotak {
+        margin: 20px auto;
+        background-color: grey;
+        width: 60%;
+        height: 50px;
+        border-radius: 15px;
+        list-style: none;
+        box-shadow: 1px 1px 1px 1px blue;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .sidebar-nav ul li {
+        text-align: center;
+    }
+    .sidebarnav-kotak:hover {
+        background-color: orange;
+        transform: translateX(10px);
+    }
+    .sidebar-nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #fff;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    #header {
+        height: 1000px;
+    }
+    .container {
+        margin: auto 10px;
+    }
+    nav ul {
+        display: none;
+    }
+    .blokul {
+        display: none;
+    }
+    .container-toggle {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -22.5px;
+        margin-right: 15px;
+    }
+    .kotak-login {
+        display: flex;
+        width: 70px;
+        height: 25px;
+        background-color: orange;
+        border-radius: 30px;
+        transform: translateX(-20px);
+        transition: 1s;
+    }
+    .kotak-login a {
+        text-decoration: none;
+        font-size: 12px;
+        margin: auto;
+    }
+    .kotak-login:hover {
+        background-color: blue;
+    }
+    .bahasa img {
+        display: flex;
+        transform: translateY(-3px)translateX(-35px);
+    }
+    .bahasa {
+        position: relative;
+        display: inline-block;
+        transition: 1s;
+        cursor: pointer;
+    }
+    
+    .flagdropdown-responsive {
+        display: none;
+        position: absolute;
+        top: 24px;
+        right: -80px;
+        background-color: #f9f9f9;
+        width: 140px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 2px 5px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    
+    .flagdropdown-responsive a {
+        font-size: 15px;
+        text-decoration: none;
+        transition: 400ms;
+    }
+    
+    .flagdropdown-responsive a:hover {
+        color: orange;
+    }
+    
+    .bahasa:hover .flagdropdown-responsive {
+        display: block;
+    }
+    .menu-toggle {
+        transform: scale(1.4);
+    }
+    nav .logo svg {
+        transform: scale(1.5) translateX(1px)translateY(3px);    
+    }
+    nav {
+        display: block;
+        padding: 40px 0 0 0;
+    }
+    nav .logo {
+        display: flex;
+        flex-direction: row;
+    }
+    nav .logo a {
+        font-size: 20px;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-1 h3{
+        display: none;        
+    }
+    .content-1 h1{
+        font-size: 50px;        
+    }
+    .content-1 p {
+        font-size: 21px;
+        padding-top: 10px;
+    }
+    .content1-gambar img {
+        width: 100%;
+        height: 100%;
+        transform: translateY(-5px);
+    }
+    #artikel h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .container-artikel {
+        display: flex;
+        flex-direction: column;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .artikel2 img {
+        width: 550px;
+    }
+    .content2 {
+        text-align: center;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    .content2 h4 {
+        font-size: 27px;
+    }
+    .content2 p {
+        font-size: 20px;
+    }
+    .vidio-gif {
+        display: flex;
+        justify-content: center;
+    }
+    .vidio {
+        height: 280px;
+        width: 100%;
+    }
+    .gif img {
+        height: 280px;
+        width: 100%;
+    }
+    .content3 h6 {
+        font-size: 80px;
+        text-align: center;
+    }
+    .content3 p {
+        font-size: 25px;
+    }
+    .container-step {
+        gap: 20px;
+    }
+    .step-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-step h1 {
+        font-size: 30px;
+    }
+    .hover h1 {
+        font-size: 25px;
+    }
+    .hover h5 {
+        font-size: 23px;
+    }
+    .hover p {
+        font-size: 19px;
+    }
+    .step-kotak {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #footer {
+        height: 100%;
+    }
+    .footer1 p {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .footer-kotak {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+    .footersec {
+        margin-bottom: 10px;
+    }
+    .footertext {
+        margin-bottom: 10px;
+    }
+    .copyryght {
+        padding-bottom: 15px;
+    }
+}
+
+/* ---------------------UKURAN TABLET---------------- */
+
+@media only screen and (min-width: 600px) {
+    .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100px;
+        height: 60vh;
+        width: 100%;
+        background-color: grey;
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3),
+                    0 -5px 10px -5px rgba(0, 0, 0, 0.3);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .sidebar-nav.show {
+        /* sidebar visible */
+        transform: translateX(0);
+    }
+    .sidebarnav-kotak {
+        margin: 20px auto;
+        background-color: grey;
+        width: 60%;
+        height: 50px;
+        border-radius: 15px;
+        list-style: none;
+        box-shadow: 1px 1px 1px 1px blue;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .sidebar-nav ul li {
+        text-align: center;
+    }
+    .sidebarnav-kotak:hover {
+        background-color: orange;
+        transform: translateX(10px);
+    }
+    .sidebar-nav a {
+        text-decoration: none;
+        line-height: 50px;
+        color: #fff;
+    }
+    #header {
+        height: 1380px;
+    }
+    .menu-toggle {
+        display: flex;  
+    }
+    nav ul {
+        display: none;
+    }
+    .blokul {
+        display: none;
+    }
+    .container {
+        margin: auto 24px;
+    }
+    .container-toggle {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -22.5px;
+        margin-right: 15px;
+    }
+    .kotak-login {
+        display: flex;
+        width: 100px;
+        height: 40px;
+        background-color: orange;
+        border-radius: 30px;
+        transform: translateX(-20px)translateY(-8px);
+        transition: 1s;
+    }
+    .kotak-login a {
+        text-decoration: none;
+        font-size: 17px;
+        margin: auto;
+    }
+    .kotak-login:hover {
+        background-color: blue;
+    }
+    .bahasa img {
+        display: flex;
+        transform: scale(1.2) translateY(-2px)translateX(-35px);
+    }
+    .bahasa {
+        position: relative;
+        display: inline-block;
+        transition: 1s;
+        cursor: pointer;
+    }
+    
+    .flagdropdown-responsive {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: -80px;
+        background-color: #f9f9f9;
+        width: 150px;
+        height: 60px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding-top: 10px;
+        padding-left: 10px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    
+    .flagdropdown-responsive a {
+        font-size: 16px;
+        text-decoration: none;
+        transition: 400ms;
+    }
+    
+    .flagdropdown-responsive a:hover {
+        color: orange;
+    }
+    
+    .bahasa:hover .flagdropdown-responsive {
+        display: block;
+    }
+    .menu-toggle {
+        transform: scale(1.4);
+    }
+    nav .logo svg {
+        transform: scale(1.5) translateX(1px)translateY(3px);    
+    }
+    nav {
+        display: block;
+        padding: 40px 0 0 0;
+    }
+    nav .logo {
+        display: flex;
+        flex-direction: row;
+    }
+    nav .logo a {
+        font-size: 20px;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-1 h3{
+        font-size: 25px;      
+    }
+    .content-1 h1{
+        font-size: 87px;        
+    }
+    .content-1 p {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    nav .logo a {
+        font-size: 29px;
+    }
+    nav .logo svg {
+        transform: scale(2)translateY(5px);
+    }
+    .container-artikel {
+        margin: 5px;
+    }
+    .artikel2 {
+        display: flex;
+        flex-direction: column;     
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .artikel2 img {
+        width: 700px;
+        height: 800px;
+    }
+    .content2 {
+        display: flex;
+        justify-self: center;
+        margin: 30px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .vidio {
+        width: 600px;
+        height: 400px;
+        margin: 10px auto;
+    }
+    .gif img {
+        width: 600px;
+        height: 400px;
+        margin: 10px auto; 
+    }
+    .content3 h6 {
+        font-size: 70px;
+        text-align: center;
+    }
+    #step {
+        max-width: 100%;
+        height: 100%;
+    }
+    .container-step h1 {
+        font-size: 40px;
+    }
+    .step-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-stepkotak {
+        display: flex;
+        justify-content: center;
+    }
+    .step-kotak {
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .step-kotak a {
+        line-height: 60px;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer1 p {
+        font-size: 34px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .footer-kotak {
+        margin: auto;
+    }
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footersec {
+        margin-bottom: 10px;
+    }
+    .footertext {
+        margin-bottom: 10px;
+    }
+    .copyryght {
+        padding-bottom: 15px;
+    }
+}
+
+/* ---------------------------LARGE TABLET---------------------- */
+
+@media only screen and (min-width: 768px) {
+    #header {
+    height: 1500px;   
+    }
+    .nav ul {
+        display: flex;
+    }
+    .blokul {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* -----------------------UKURAN DESKOP---------------------- */
+
+@media only screen and (min-width: 992px) {
+    #header {
+        height: 800px;
+    }
+    .nav ul {
+        display: none;
+    }
+    .blokul {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .connnn {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content1-gambar {
+        width: 100%;
+        height: 50%;
+    }
+    .content-1 h3{
+        font-size: 20px;
+    }
+    .content-1 h1 {
+        font-size: 80px;
+    }
+    .artikel22 {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 85%;
+    }
+    .content2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        width: 500px;
+    }
+    .image img {
+        width: 500px;
+        height: 500px;
+    }
+    .image {
+        margin: 0;
+    }
+    .content2 h4 {
+        font-size: 27px;
+        text-align: start;
+    }
+    .content2 p {
+        font-size: 18px;
+        text-align: start;
+    }
+    .vidio {
+        width: 700px;
+        height: 500px;
+    }
+    .gif img {
+        width: 700px;
+        height: 500px;
+    }
+    #step {
+        margin: 0;
+        width: 100% ;
+    }
+    .container-step h1 {
+        font-size: 60px;
+        margin-top: 150px;
+    }
+    .stepcontent-1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hover h1 {
+        margin-top: 0;
+    }
+    .hover {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1 {
+        margin: 0 auto;
+    }
+    .footer11 {
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+    .footer11 p {
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+    .footer22 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer2 {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ----------------------------LARGE DESKOP-------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    #header {
+        height: 750px;
+    }
+    .blokul {
+        display: flex;
+    }
+    .content-1 {
+        width: 100%;
+    }
+    .content1-gambar {
+        width: 80%;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .kotak-login {
+        display: none;
+    }
+    .bahasa {
+        display: none;
+    }
+    #header {
+        margin: 0 auto;
+    }
+    nav {
+        display: flex;
+        max-width: 1168px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    nav ul {
+        display: flex;
+    }
+    .dashboard {
+        display: flex;
+        justify-content: end;
+    }
+    .container-content {
+        max-width: 1168px;
+        margin: 0 auto;
+    }
+    .hover h1 {
+        font-size: 40px;
+    }
+    .hover h5 {
+        font-size: 20px;
+    }
+    .hover p {
+        font-size: 16px;
+    }
+    .container2 {
+        max-width: 1168px;
+        margin: 0 auto;
+    }  
+    .artikel2 {
+        max-width: 1168px;
+        margin: 0 auto;
+    }
+    .step-content {
+        max-width: 1168px;
+        margin: 0 auto;
+    } 
+    .footer2 {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
